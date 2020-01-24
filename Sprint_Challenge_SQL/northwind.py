@@ -19,8 +19,15 @@ print (curs.execute(ten_most_exp_unitprice).fetchall())
 
 
 
+birth_age = "SELECT * FROM  Employee GROUP BY BirthDate ORDER BY BirthDate DESC"
+print (curs.execute(birth_age).fetchall())
 
 
+average_age = 'SELECT AVG(BIrthDate) AS AverageAges FROM Employee'
+print (curs.execute(average_age).fetchall())
+
+ten_most_exp_unitprice_suppliers = "SELECT * FROM  Product ORDER BY UnitPrice AND SupplierId DESC LIMIT 10 "
+print (curs.execute(ten_most_exp_unitprice_suppliers).fetchall())
 
 
 largest_cat = 'SELECT DISTINCT CategoryId FROM Product'

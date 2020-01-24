@@ -129,10 +129,10 @@ Answer the following questions, baseline ~3-5 sentences each, as if they were
 interview screening questions (a form you fill when applying for a job):
 
 - In the Northwind database, what is the type of relationship between the
-  `Employee` and `Territory` tables?
+  `Employee` and `Territory` tables? one to Many
 - What is a situation where a document store (like MongoDB) is appropriate, and
-  what is a situation where it is not appropriate?
-- What is "NewSQL", and what is it trying to achieve?
+  what is a situation where it is not appropriate? appropriate If you have lot of data where it wont fit in a single computer and you need different servers, not appropriate if you want efficiency and ACID easily implemented!
+- What is "NewSQL", and what is it trying to achieve? NewSQL is SQL at a large scale built on top of SQL and its trying to be SQL for big Data
 
 ### Part 5 - Turn it in!
 Provide all the files you wrote (`demo_data.py`, `northwind.py`), as well as
